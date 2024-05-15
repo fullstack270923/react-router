@@ -11,7 +11,7 @@ const Post = () => {
     // /posts/:id
     let { id } = useParams();
 
-    const [post, setPost] = useState([])
+    const [post, setPost] = useState()
 
     useEffect(() => {
         async function fetchPosts() {
